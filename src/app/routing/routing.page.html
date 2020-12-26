@@ -35,7 +35,196 @@
   
   <ion-card>
     <ion-card-content>
-      
+      <ion-grid>
+        <ion-row>
+         <ion-col col-3>
+          <div>
+            <ion-item>
+             <ion-label>Inside</ion-label>
+             <ion-checkbox></ion-checkbox>
+             </ion-item>
+          </div>
+         </ion-col>
+         <ion-col col-3>
+          <div>
+            <ion-item>
+              <ion-label>Outside</ion-label>
+              <ion-checkbox></ion-checkbox>
+            </ion-item>
+          </div>  
+         </ion-col>
+         <ion-col col-3>
+           <div>
+              <ion-item>
+               <ion-label position="stacked">Status</ion-label>
+               <ion-input></ion-input>
+              </ion-item>
+           </div> 
+          </ion-col>
+         <ion-col size="2" col-3>
+          <div>
+            <ion-item>
+              <ion-label position="stacked">Work Center ID</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </div>
+         </ion-col>
+       </ion-row>
+      </ion-grid>  
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2">
+            <div>
+              <ion-item>
+                <ion-label position="stacked">Operation ID</ion-label>
+              </ion-item>
+            </div>
+          </ion-col>
+          <ion-col size="1">
+            <div>
+              <ion-item>
+                <ion-button>
+                  <ion-icon name="search-outline"></ion-icon>
+                </ion-button>
+              </ion-item>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid> 
+      <ion-grid>
+        <ion-row>
+          <ion-col size='2'>
+            <div>
+              <ion-item>
+                <ion-label position="stacked">
+                  Description
+                </ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>   
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-title>Labor</ion-card-title>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2" col-3>
+            <div>
+              <ion-item>
+                <ion-label position="stacked">Setup Hrs</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+          <ion-col size="2" col-3>
+            <div>
+              <ion-item>
+                <ion-label position="stacked">Run Rate</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+          <ion-col  size="2" col-3>
+            <div>
+              <ion-item>
+                <ion-label position="stacked">Run Rate Type</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2" col-3>
+            <div>
+              <ion-item>
+                <ion-label position="stacked">Efficiency %</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+          <ion-col  size="2" col-3>
+            <div>
+              <ion-item>
+                <ion-label position="stacked">Attended %</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+          <ion-col size="2" col-3>
+            <div>
+              <ion-item>
+                <ion-label position="stacked">Total line Hrs</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+          <ion-col size="2" col-3>
+            <div>
+              <ion-item>
+                <ion-label position="stacked">Total Job Hrs</ion-label>
+                <ion-input placeholder="0.00"></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid> 
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>
+        Scheduling
+      </ion-card-title>
+        <ion-grid>
+          <ion-row>
+            <ion-col  size="2" col-3>
+              <div>
+                <ion-item>
+                  <ion-label posistion="stacked">Queue Hrs</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </div>
+            </ion-col>
+            <ion-col  size="2" col-3>
+              <div>
+                <ion-item>
+                  <ion-label position="stacked">Lag Hrs</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </div>
+            </ion-col>
+            <ion-col size="2" col-3>
+              <div>
+                <ion-item>
+                  <ion-label position="stacked">Resources Assigned</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </div>
+            </ion-col>
+            <ion-col size="2" col-3>
+              <div>
+                <ion-item>
+                  <ion-label position="stacked">Overlap</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </div>
+            </ion-col>
+            <ion-col col-3>
+              <div>
+                <ion-item>
+                  <ion-label position="stacked">Overlap Type</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
     </ion-card-content>
   </ion-card>
 </ion-content>
