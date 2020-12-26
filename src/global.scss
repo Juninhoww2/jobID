@@ -17,6 +17,12 @@
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
 @import '~@ionic/angular/css/display.css';
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&display=swap');
+
+.button {
+  font-family: 'Andika New Basic', sans-serif;
+}
+
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
