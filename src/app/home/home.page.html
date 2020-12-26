@@ -1,14 +1,28 @@
 <ion-card>
   <ion-card-content>
-    <ion-item color="tertiary">
+  <ion-row col-3>
+    <ion-item>
       <ion-label position="stacked">Job ID:</ion-label>
       <ion-input></ion-input>
-      <ion-input type="number" value="1"></ion-input>
-      <ion-label position="stacked">Status:</ion-label>
-      <ion-input placeholder="active"></ion-input>
-      <ion-label position="stacked">Type:</ion-label>
-      <ion-input placeholder="Regular"></ion-input>
     </ion-item>
+    <ion-col col-3 class="padding-left-2px">
+      <ion-item>
+        <ion-input type="number" value="1"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col col-3> 
+      <ion-item>
+        <ion-label position="stacked">Status:</ion-label>
+        <ion-input placeholder="active"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col col-3>
+      <ion-item>
+        <ion-label position="stacked">Type:</ion-label>
+       <ion-input placeholder="Regular"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
   </ion-card-content>
 </ion-card>
 
@@ -49,7 +63,38 @@
 
 <ion-card>
   <ion-card-content>
-    
+    <ion-row>
+      <ion-col col-3>
+        <ion-item>
+          <ion-label position="floating">MM/DD/YYYY</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" min="1994-03-13" max="2012-12-08" value="2002-0923T15:03:46.789"></ion-datetime>
+        </ion-item>
+      </ion-col>  
+      <ion-col col-9>
+        <ion-item class="padding-left-2px">
+          <ion-label position="stacked">Order Qty</ion-label>
+          <ion-input></ion-input> 
+        </ion-item>
+      </ion-col>
+      <ion-col col-9>
+        <ion-item>
+          <ion-label position="stacked">Order VolM</ion-label>
+          <ion-input placeholder="ea"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-9>
+        <ion-item>
+          <ion-label position="stacked">Status</ion-label>
+          <ion-input placeholder="active"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-9>
+        <ion-item>
+          <ion-label>MM DD YY</ion-label>
+          <ion-datetime [pickerOptions]="customPickerOptions" placeholder="/ /"></ion-datetime>
+        </ion-item>
+      </ion-col>
+    </ion-row>
   </ion-card-content>
 </ion-card>
 </ion-content>
